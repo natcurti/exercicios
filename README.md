@@ -2,4 +2,5 @@
 
 ### Lista de Projetos:
 
-- Citações Diárias
+- Quotes
+- Modal
