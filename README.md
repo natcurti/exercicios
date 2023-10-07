@@ -4,3 +4,5 @@
 
 - Quotes
 - Modal
+- Perguntas Frequentes
+- Cronômetro
