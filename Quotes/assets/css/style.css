@@ -1,0 +1,86 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+body{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(/assets/img/Background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 3rem;
+    box-shadow: 11px 13px 25px -15px rgba(0,0,0,0.75);
+}
+
+.title{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container__quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding-inline: 0.7rem;
+}
+
+.quote{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.author{
+    font-size: 0.8rem;
+}
+
+.newQuote{
+    background-color: darkslategray;
+    border: none;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 40%;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 11px 13px 25px -15px rgba(0,0,0,0.75);
+    transition: all .5s;
+}
+
+.newQuote:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 60%;
+    }
+
+    .title{
+        font-size: 1.25rem;
+    }
+
+    .newQuote{
+        font-size: 0.6rem;
+    }
+}
