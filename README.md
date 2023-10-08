@@ -6,3 +6,5 @@
 - Modal
 - Perguntas Frequentes
 - Cronômetro
+- Lista de Tarefas
+
