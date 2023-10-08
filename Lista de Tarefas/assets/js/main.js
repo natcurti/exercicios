@@ -9,30 +9,21 @@ input.addEventListener('keydown', function(e){
         <li class="tasks__list">
             <p>${input.value}</p>
             <div>
-                <button class="btnCheck"><i class="fa-solid fa-check"></i></button>
-                <button class="btnDelete"><i class="fa-solid fa-trash"></i></button>
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-trash"></i>
             </div>
         </li>        
         `
         ul.appendChild(newTopic);   
-        input.value = '';
-        createBtnEventListener();
+        input.value = '';        
     }
 })
 
-function createBtnEventListener(){
-    const btnCheck = document.querySelectorAll('.btnCheck');
-    const btnDelete = document.querySelectorAll('.btnDelete');
-
-    btnCheck.forEach((element) => {
-        element.addEventListener('click', function(){
-            element.parentElement.previousElementSibling.classList.add('done');
-        })
-    })
-
-    btnDelete.forEach((element) => {
-        element.addEventListener('click', function(){
-            element.parentElement.parentElement.remove();
-        })
-    })
-}
+ul.addEventListener('click', function(e){
+    if(e.target.classList.contains('fa-check')){
+        e.target.parentElement.previousElementSibling.classList.toggle('done');
+    } 
+    if(e.target.classList.contains('fa-trash')){
+        e.target.parentElement.parentElement.remove();
+    }
+})

@@ -71,7 +71,7 @@ body{
     text-decoration: line-through;
 }
 
-button{
+.fa-check, .fa-solid{
     width: 3rem;
     height: 1.5rem;
     border: none;
@@ -79,9 +79,12 @@ button{
     cursor: pointer;
     background-color: lightgrey;
     transition: .25s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button:hover{
+.fa-check:hover, .fa-solid:hover{
     background-color: white;
 }
 
